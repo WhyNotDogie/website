@@ -37,10 +37,15 @@
     display: flex;
     justify-content: space-around;
     margin: 0;
+    padding: 0;
 }
 
 .topbar-list > a {
     padding: 10px;
+    flex: 1 1 100px;
+    min-width: 100px;
+    overflow: hidden;
+    text-align: center;
 }
 
 body > header {
