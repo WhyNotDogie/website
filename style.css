@@ -68,4 +68,5 @@ a {
 
 a:hover {
     background-color: var(--surface0);
+    size: 100%;
 }
