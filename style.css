@@ -26,11 +26,12 @@
     --mantle: #181825;
     --crust: #11111b;
     --accent: var(--mauve);
+    overflow: hidden;
 }
 
 .dogie-top-name {
     font-weight: bold;
-    color: var(--accent);
+    color: var(--accent) !important;
 }
 
 .topbar-list {
@@ -46,6 +47,11 @@
     min-width: 100px;
     overflow: hidden;
     text-align: center;
+    color: var(--text);
+    text-decoration: none;
+    font-family: Comfortaa, cursive;
+    font-size: xx-large;
+    transition: 0.3s;
 }
 
 body > header {
@@ -58,15 +64,44 @@ body {
     background-color: var(--base);
 }
 
-a {
+h1 {
     color: var(--text);
-    text-decoration: none;
-    font-family: Comfortaa, cursive;
-    font-size: xx-large;
-    transition: 0.3s;
 }
 
-a:hover {
+span.whynotdogie {
+    color: var(--accent);
+}
+
+a:hover button:hover {
     background-color: var(--surface0);
     size: 100%;
+}
+
+.content {
+    padding: 1cm;
+    text-align: center;
+    align-self: center;
+    transform: translateY(50%);
+}
+
+h1 {
+    font-family: Comfortaa, cursive;
+}
+
+button {
+    border-radius: 12px;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--surface1);
+    border: none;
+}
+
+button > a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Comfortaa, cursive;
+    font-weight: bold;
 }
