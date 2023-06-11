@@ -72,9 +72,12 @@ span.whynotdogie {
     color: var(--accent);
 }
 
-a:hover button:hover {
-    background-color: var(--surface0);
-    size: 100%;
+a:hover {
+    background-color: var(--surface0) !important;
+}
+
+button:hover {
+    background-color: var(--surface0) !important;
 }
 
 .content {
@@ -96,6 +99,7 @@ button {
     margin: 10px;
     background-color: var(--surface1);
     border: none;
+    transition: 0.3s;
 }
 
 button > a {
@@ -104,4 +108,5 @@ button > a {
     font-size: x-large;
     font-family: Comfortaa, cursive;
     font-weight: bold;
+    transition: 0.3s;
 }

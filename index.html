@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="alert('eheh')">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,7 @@
     <header><ul class="topbar-list"><a href="/" class="dogie-top-name">dogie.dev</a><a href="/about">About Me</a><a href="/projects">My Projects</a></ul></header>
     <div class="content">
         <h1>Hi, I'm <span class="whynotdogie">WhyNotDogie.</span></h1><br>
-        <button><a href="/about">About Me</a></button><button><a href="/projects">My Projects</a></button>
+        <button onclick="window.location.replace('/about')"><a href="/about">About Me</a></button><button onclick="window.location.replace('/projects')"><a href="/projects">My Projects</a></button>
     </div>
     <!-- <script src="https://livejs.com/live.js"></script> -->
 </body>
