@@ -89,6 +89,7 @@ button:hover {
 
 h1 {
     font-family: Comfortaa, cursive;
+    font-weight: bold;
 }
 
 button {
@@ -100,6 +101,7 @@ button {
     background-color: var(--surface1);
     border: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 button > a {
@@ -109,4 +111,29 @@ button > a {
     font-family: Comfortaa, cursive;
     font-weight: bold;
     transition: 0.3s;
+}
+
+a {
+    text-decoration-color: var(--accent);
+    text-decoration: none;
+    color: var(--text);
+    font-family: Comfortaa, cursive;
+}
+
+.content > ul > li {
+    padding: 10px;
+    font-weight: bold;
+    > a {
+        font-weight: bold;
+    }
+}
+
+.content > ul {
+    list-style-type: disc !important;
+}
+
+p {
+    color: var(--text);
+    font-weight: bold;
+    font-family: Comfortaa, cursive;
 }
