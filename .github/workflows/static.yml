@@ -35,6 +35,14 @@ jobs:
         uses: actions/configure-pages@v3
         with:
           static_site_generator: "sveltekit"
+      - name: Move all to setup build
+        run: |
+          shopt -s extglob
+          rm -rf !(build)
+          mv build ___build
+          rm -rf ___build/___build
+          mv ___build/* ./
+          rm -rf ___build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
