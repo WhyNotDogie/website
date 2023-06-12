@@ -1,5 +1,5 @@
 <script lang="ts">
-    import App from "../lib/main.svelte"
+	import App from '../lib/main.svelte';
 </script>
 
-<App/>
+<App />
