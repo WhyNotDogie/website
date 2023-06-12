@@ -1,1 +1,5 @@
-<h1>SvelteKit test</h1>
+<script lang="ts">
+    import App from "../lib/main.svelte"
+</script>
+
+<App/>
