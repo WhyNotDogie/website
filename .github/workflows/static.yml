@@ -37,6 +37,7 @@ jobs:
           static_site_generator: "sveltekit"
       - name: Move all to setup build
         run: |
+          cd $GITHUB_WORKSPACE
           shopt -s extglob
           rm -rf !(build)
           mv build ___build
